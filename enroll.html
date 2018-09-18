@@ -3,12 +3,11 @@
 
 
 
-
 <head>
 
     <meta charset="utf-8">
 
-    <title>Contacts Us</title>
+    <title>Enroll Page</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +22,58 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 
+
+    <style>
+        section.section-services-second .services-item:nth-child(2n + 1) {
+            clear: both;
+        }
+        
+        section.section-services-second .services-item {
+            width: 50%;
+            position: relative;
+            padding-left: 215px;
+            margin-bottom: 50px;
+        }
+        
+        section.section-services .services-item {
+            float: left;
+            padding: 0 15px;
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            section.section-services-second .services-item {
+                width: 100%;
+                min-height: 170px;
+            }
+        }
+        
+        @media only screen and (max-width: 991px) {
+            section.section-services .services-item {
+                width: 50%;
+            }
+            section.section-services-second .services-item {
+                width: 100%;
+            }
+            .wrapper-benjamin section.section-services .services-item:nth-child(3n + 1):nth-child(2n + 1) {
+                clear: both;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            section.section-services-second .services-item {
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+            section.section-services .services-item {
+                width: 100%;
+                max-width: 345px;
+                float: none;
+                margin: auto;
+            }
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -34,7 +85,7 @@
             </div>
             <div class="navigation-content">
                 <a href="index.html" class='logo'>
-                    <img src="img/primedsoft.png" alt="">
+                    <img src="img/header-logo.png" alt="">
                 </a>
                 <nav>
                     <ul>
@@ -48,7 +99,7 @@
                             <a href="about.html">About us</a>
                         </li>
                         <li>
-                            <a href="blog.html">Blog</a>
+                            <a href="blog.html" class='active'>Blog</a>
                             <div class="first-submenu submenu">
                                 <ul>
                                     <li>
@@ -61,7 +112,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="contact-us.html" class='active'>Contact us</a>
+                            <a href="contact-us.html">Contact us</a>
                         </li>
                         <li>
                             <a href="enroll.html">Enroll</a>
@@ -110,7 +161,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <a href="index.html" class='logo'>
-                                <img src="img/primedsoft.png" alt="">
+                                <img src="img/header-logo.png" alt="">
                             </a>
                             <a href="#" class="menu-open">
                                 <span></span>
@@ -127,7 +178,7 @@
                                         <a href="about.html">About us</a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">Blog</a>
+                                        <a href="blog.html" class='active'>Blog</a>
                                         <div class="first-submenu submenu">
                                             <ul>
                                                 <li>
@@ -140,7 +191,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html" class='active'>Contact us</a>
+                                        <a href="contact-us.html">Contact us</a>
                                     </li>
                                     <li>
                                         <a href="enroll.html">Enroll</a>
@@ -158,14 +209,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="section-title center-title">Contact Us</div>
+                                <div class="section-title center-title">Single Post</div>
                                 <div class="section-breadcrumbs text-center">
                                     <ul>
                                         <li>
                                             <a href="index.html">Home</a> /
                                         </li>
                                         <li>
-                                            <a href="contact-us.html">Contact Us</a>
+                                            <a href="enroll.html">Enroll</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -176,54 +227,70 @@
             </div>
         </header>
 
-        <section class="section-contact">
+        <section class="section-services section-services-second">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <ul>
-                            <li class="phone">
-                                <div class="title">Phone Us</div>
-                                <div>
-                                    <a href="tel:+2347031991203">+2347031991203</a>
+                    <div class="services">
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/3-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Data &amp; Analytics</a>
                                 </div>
-                            </li>
-                            <li class='email'>
-                                <div class="title">Write Us</div>
-                                <div>
-                                    <a href="mailto:info@primedsoft.com">info@primedsoft.com</a>
-                                </div>
-                            </li>
-                            <li class="address">
-                                <div class="title">Find Us</div>
-                                <div>Km 34 East West road, Opposite overcomers junction by Rumudara,</div>
-                                <div>Port Harcourt.</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="map" style='background-image: url(img/map.jpg)'></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="section-title center-title">Get in Touch</div>
-                        <p>
-                            Want to do business with us?. Reachout to us.
-                        </p>
-                        <form class='first-form'>
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Phone">
-                            <textarea placeholder="Enter Your Message..."></textarea>
-                            <div class="button">
-                                <button>Submit</button>
+                                <p class="description">Suspendisse potenti. Pellentesque gravida justo et tortor ornare, ac mollis lacus dapibus. Suspendi sse quis mi a est convallis mattis.
+                                </p>
                             </div>
-                        </form>
+                        </div>
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/2-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Business Process Services</a>
+                                </div>
+                                <p class="description">Nulla neque nunc, fringilla a libero in, interdum placerat mauris. Integer ac quam eget nisi interdum tristique.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/3-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Organizational Management</a>
+                                </div>
+                                <p class="description">Quisque hendrerit ultrices tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/1-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Program Management</a>
+                                </div>
+                                <p class="description">Mauris varius ex augue, nec placerat augue blandit vel. Donec in augue eget mauris maxim us tincidunt vitae id risus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/4-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Enabling Infrastructure</a>
+                                </div>
+                                <p class="description">Aliquam elementum justo vel quam lacinia, sit amet condimentum tortor suscipit. Vestibulum quis volutpat velit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services-item">
+                            <a href="benjamin-single-service.html" style='background-image: url(img/2-big.jpg)'></a>
+                            <div class="content">
+                                <div class="title">
+                                    <a href="benjamin-single-service.html">Business &apm; IT Strategy</a>
+                                </div>
+                                <p class="description">Cras justo odio, dictum vel cursus quis, malesua da in ex. Phasellus imperdiet quam in eros loborti maximus. Sed in aliquam nulla.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -317,8 +384,6 @@
     <script src="js/common.js"></script>
 
 </body>
-
-
 
 
 </html>

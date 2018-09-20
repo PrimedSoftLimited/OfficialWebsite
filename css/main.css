@@ -6552,11 +6552,11 @@ select.ui.dropdown {
     content: "\f0d1";
 }
 
-.fa-pinterest:before {
+.fa-linkedin:before {
     content: "\f0d2";
 }
 
-.fa-pinterest-square:before {
+.fa-linkedin-square:before {
     content: "\f0d3";
 }
 
@@ -7155,7 +7155,7 @@ select.ui.dropdown {
     content: "\f16c";
 }
 
-.fa-instagram:before {
+.fa-medium:before {
     content: "\f16d";
 }
 
@@ -7425,11 +7425,11 @@ select.ui.dropdown {
     content: "\f1b3";
 }
 
-.fa-behance:before {
+.fa-github:before {
     content: "\f1b4";
 }
 
-.fa-behance-square:before {
+.fa-github-square:before {
     content: "\f1b5";
 }
 
@@ -7908,7 +7908,7 @@ select.ui.dropdown {
     content: "\f230";
 }
 
-.fa-pinterest-p:before {
+.fa-linkedin-p:before {
     content: "\f231";
 }
 
@@ -8955,7 +8955,7 @@ nav li {
 nav a {
     font: 500 14px "Roboto", sans-serif;
     text-transform: uppercase;
-    color: #fff;
+    color: #000;
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -9293,7 +9293,7 @@ header.page-header:not(.second-page-header) .header-bottom-content .text-slider 
 
 header.page-header .header-navigation {
     height: 100px;
-    background-color: #0a0a0a;
+    background-color: #fff;
     text-align: center;
     position: relative;
     width: 100%;

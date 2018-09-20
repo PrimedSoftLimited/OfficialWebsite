@@ -11471,7 +11471,9 @@ section.section-blog .content-button {
 }
 
 .wrapper-bridget header.page-header.second-page-header {
-    background-image: url("../img/bridget-img-7.jpg");
+    background-image: url("../img/web-bg.jpg");
+    background-size: cover;
+    background-position: top left;
 }
 
 .wrapper-bridget header.page-header.second-page-header::after {
@@ -11572,7 +11574,8 @@ section.section-blog .content-button {
 }
 
 .wrapper-bridget section.section-form {
-    background-image: url("../img/bridget-img-6.jpg");
+    background-image: url("../img/contact-bg.jpg");
+    background-size: cover;
 }
 
 .wrapper-bridget section.section-form::after {

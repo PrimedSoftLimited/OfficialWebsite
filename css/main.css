@@ -11492,7 +11492,7 @@ section.section-blog .content-button {
 }
 
 .wrapper-bridget section.section-second .picture {
-    background-image: url("../img/bridget-img-1.jpg");
+    background-image: url("../img/second-bg.jpg");
 }
 
 .wrapper-bridget section.section-second .picture::after {
@@ -11502,7 +11502,6 @@ section.section-blog .content-button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(163, 0, 0, 0.75);
 }
 
 .wrapper-bridget section.section-more-about-us {

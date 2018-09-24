@@ -7,7 +7,7 @@
 
     <meta charset="utf-8">
 
-    <title>Programming Post Page</title>
+    <title>Clean Code Post Page</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -183,114 +183,74 @@
                 <div class="row">
                     <div class="post-img" style='background-image: url(img/intro-prog.jpg)'></div>
                     <div class="col-md-8 col-md-offset-2 post-content">
-                        <div class="title">Fusce non viverra ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posue cubilia. Donec id ante ut ex tempus bibendum.
+                        <div class="title">
+                            These 5 “clean code” tips will dramatically improve your productivity.
                         </div>
                         <div class="subtitle">
-                            <span class="category">Design / Branding</span>
-                            <span class="date">04.12.2016</span>
+                            <span class="category">Coding / Software Development</span>
+                            <span class="date">25.09.2018</span>
                         </div>
-                        <p>Cras venenatis augue sed leo pellentesque sodales. Nulla facilisi. Nullam semper maximus massa eget luctus. Mauris sed odio tincidunt, volutpat augue at, commodo dui. Phasellus hendrerit condimentum vehicula. Nunc faucibus felis
-                            rhoncus libero rutrum, nec dapibus nisi pellentesque. Integer in turpis a metus consectetur luctus et id ex. Nunc commodo faucibus nulla, et elementum libero egestas rutrum. Interdum et malesuada fames ac ante ipsum primis
-                            in faucibus. Suspendisse ipsum mi, volutpat eget dignissim sed, suscipit at libero, ultricies vel massa vitae, auctor luctus ipsum.
+                        <p>Quality code. Lots of people talk about it, but few actually do it right.<br><br>Most people who code naturally know what quality code should look or feel like. It should be very easy to read and understand quickly, there shouldn’t
+                            be any major faults, edge cases should be handled, and it should be “self documenting”. Still, many people miss the mark when trying (hopefully) to write quality code.<br><br>The cause of the mistakes are understandable in
+                            many cases. It can be challenging to predict how people will interpret your code, whether they will find it easy to read or an absolute nightmare. Not only that, once your project gets very big even <b>you</b> might not be
+                            able to read it!<br><br>In such a case, it’s always good to establish some principals that you can rely on. Some go-to rules that you can always reference whenever you’re designing or writing code.<br><br>The following 5 clean
+                            coding principals are the ones I code by! They’ve given me a massive productivity boost in my work and helped both myself and my colleagues be able to easily interpret and expand the code base which I’ve worked on. Hopefully
+                            they help you code faster and better too!.
                         </p>
-                        <p>In hac habitasse platea dictumst. Vestibulum condimentum orci eget sapien fringilla, id accumsan odio suscipit. Phasellus at facilisis diam. Donec sit amet imperdiet sem. Aliquam pretium nisl tortor, ut vehicula mauris imperdiet
-                            non.
+                        <p class="title">
+                            If it isn’t tested, it’s broken.
+                        </p>
+                        <p>
+                            Test, test, test. We know we should always do it, but sometimes we cut corners so we can push the project out faster. But without thorough testing, how will you <b>100%</b> fully know that the code works? Yes there are very
+                            simple pieces of code, but one is always surprised when that crazy edge case comes up that you thought you didn’t need to test for!<br><br>Do yourself and everyone on your team a favour and regularly test the code you write.
+                            You’ll want to test in a coarse to fine style. Start small with unit tests to make sure every small part works on its own. Then slowly start testing the different subsystems together working your way up towards testing the
+                            whole new system end to end. Testing in this way allows you to easily track where the system breaks, since you can easily verify each individual component or the small subsystems as the source of any issues.
+                        </p>
+                        <p class="title">
+                            Choose meaningful names.
+                        </p>
+                        <p>
+                            This is what makes code self-documenting. When you read over your old code, you shouldn’t have to look over every little comment and run every small piece of code to figure out what it all does!<br><br>The code should roughly
+                            read like plain English. This is especially true for variable names, classes, and functions. Those three items should always have names that are self-explanatory. Rather than use a default name like “x” for example, call it
+                            “width” or “distance” or whatever the variable is supposed to represent in “read-world” terms. Coding in “real-world” terms will help make your code read in that way
+                        </p>
+                        <p class="title">
+                            Classes and functions should be small and obey the Single Responsibility Principle (SRP)
+                        </p>
+                        <p>
+                            Small classes and functions make code approximately 9832741892374 times easier to read….<br><br>But seriously they really do. First off, they allow for very isolated unit testing. If the piece of code you are testing is small,
+                            it’s easy to source and debug any issues that come up in the test or during deployment. Small classes and functions also allow for better readability. Instead of having a giant block of code with many loops and variables, you
+                            can reduce that block to a function that runs several smaller functions. You can then name each of those functions according to what they do and voila, human readable code!<br><br>SRP gives you similar benefits. One responsibility
+                            means you only have to test a handful of edge cases and those cases are quite easy to debug. In addition it’s quite easy to name the function so it has real-world meaning. Since it only has one single purpose, it’ll just be
+                            named after it’s purpose, rather than trying to name a function that’s trying to accomplish so many different things.
+                        </p>
+                        <p class="title">
+                            Catch and handle exceptions, even if you don’t think you need to
+                        </p>
+                        <p>
+                            Exceptions in code are usually edges case or errors that we would like to handle in our own specific way. For example, normally when an error is raised the program will stop; this definitely will not work for code we have deployed to production that is
+                            serving users! We’ll want to handle that error separately, perhaps try to see if it’s super critical or if we should just pass over it.<br><br>You should always be catching and handling exceptions
+                            specifically, even if you don’t think you need to. Better to be safe than sorry. Exception handling will give you a better sense of order and control over your code, since you know specifically what will happen if a certain
+                            exception is triggered or a piece of code fails. Having a deeper understand of your code like this makes it easier to debug and makes your code more fault tolerant.
+                        </p>
+                        <p class="title">
+                            Logs, logs, logs
+                        </p>
+                        <p>
+                            Log it. What you may ask? …. Everything that’s what! There’s no such thing as too much logs!<br><br>Logs are your absolute number 1 source for debugging your code and monitoring your application when it’s in production. You
+                            should be logging every major “step” your program takes, any important calculations it makes, any errors, exceptions, or out of the ordinary results. It may also be useful to log the date and time that these events occur for
+                            easy tracking. All of this will make it easy to trace exactly which step in the pipeline the program failed.<br><br>Many common programming languages such as Python come with their own logging libraries that have some very
+                            useful functions you can play with. If your application is to run as a SaaS app, then you may want to consider off-device, centralised logging. This way if one of your servers dies you can easily recover the logs!
+                        </p>
+                        <p class="title">
+                            TL;DR
                         </p>
                         <blockquote>
-                            <p>Aenean eget varius augue, nec gravida lectus. Pellentesque in imperdiet tellus, ac efficitur risus. Etiam laoreet dapibus lorem vitae aliquam. Sed ultrices elementum ligula, molestie consectetur massa rhoncus at. Etiam iaculis
-                                elit vitae venenatis varius. Vestibulum elementum quam a ante venenatis, eu convallis nisi dapibus.
+                            <p>
+                                (1) If it isn’t tested, it’s broken<br><br>(2) Choose meaningful names<br><br>(3) Classes and functions should be small and obey the Single Responsibility Principle (SRP)<br><br>(4) Catch and handle exceptions, even if
+                                you don’t think you need to<br><br>(5) Logs, logs, logs
                             </p>
                         </blockquote>
-                        <p>In hac habitasse platea dictumst. Vestibulum condimentum orci eget sapien fringilla, id accumsan odio suscipit. Phasellus at facilisis diam. Donec sit amet imperdiet sem. Aliquam pretium nisl tortor, ut vehicula mauris imperdiet
-                            non.
-                        </p>
-                        <div class='article-bottom'>
-                            <div class="article-tags">
-                                <span>Tags:</span>
-                                <a href="#">design</a>,
-                                <a href="#">creative</a>,
-                                <a href="#">branding</a>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="article-comments">
-                            <div class="title">4 Comments:</div>
-                            <div class="comment">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment comment-replied">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment comment-replied">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="article-form">
-                            <form class='second-form'>
-                                <div class="title">Leave a Comment:</div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="text" placeholder='Your Name'>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="text" placeholder='Your Email'>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <textarea placeholder='Your Comment'></textarea>
-                                    </div>
-                                    <div class="content-button col-md-12 col-sm-12">
-                                        <button class="button third-button">Post a comment</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

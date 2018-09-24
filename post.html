@@ -7,20 +7,50 @@
 
     <meta charset="utf-8">
 
-    <title>Post Page</title>
+    <title>Git Post Page</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:image" content="path/to/image.html">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/primedsoft-favicon.jpg" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/primedsoft-favicon.jpg">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        @media only screen and (max-width: 1500px) {
+            article .post-content {
+                margin-bottom: 400px !important;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            article .art-img {
+                height: 200px !important;
+                position: absolute;
+                top: 440px !important;
+            }
+            article .post-content {
+                position: relative;
+                bottom: -200px !important;
+                margin-bottom: 160px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            article .art-img {
+                height: 100px !important;
+            }
+            article .post-content {
+                bottom: -100px !important;
+            }
+        }
+    </style>
 
 </head>
 
@@ -54,7 +84,7 @@
                                         <a href="blog.html">Blog</a>
                                     </li>
                                     <li>
-                                        <a href="bridget-post.html">Single Post</a>
+                                        <a href="post.html">Single Post</a>
                                     </li>
                                 </ul>
                             </div>
@@ -70,32 +100,32 @@
                 <ul class="social">
                     <li>
                         <a href="https://www.facebook.com/primedsoft" target="_blank" class='facebook'>
-                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-facebook" style="color:black;"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class='twitter'>
-                            <i class="fa fa-twitter"></i>
+                        <a href="https://twitter.com/@primedsoft" target="_blank" class='twitter'>
+                            <i class="fa fa-twitter" style="color:black;"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" class='google'>
-                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-google-plus" style="color:black;"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class='behance'>
-                            <i class="fa fa-github"></i>
+                        <a href="https://github.com/PrimedSoftLimited" target="_blank" class='behance'>
+                            <i class="fa fa-github" style="color:black;"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/company/primedsoft" target="_blank" class='pinterest'>
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-linkedin" style="color:black;"></i>
                         </a>
                     </li>
                     <li>
                         <a href="#" class='instagram'>
-                            <i class="fa fa-medium"></i>
+                            <i class="fa fa-medium" style="color:black;"></i>
                         </a>
                     </li>
                 </ul>
@@ -133,7 +163,7 @@
                                                     <a href="blog.html">Blog</a>
                                                 </li>
                                                 <li>
-                                                    <a href="bridget-post.html">Single Post</a>
+                                                    <a href="post.html">Single Post</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -181,116 +211,145 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <div class="post-img" style='background-image: url(img/bridget-img-15.jpg)'></div>
-                    <div class="col-md-8 col-md-offset-2 post-content">
-                        <div class="title">Fusce non viverra ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posue cubilia. Donec id ante ut ex tempus bibendum.
+                    <div class="art-img" style='background-image: url(img/intro-git.png);background-size:100%;background-repeat:no-repeat;height:400px;width:80%;position:absolute;top:540px;left:10%;'></div>
+                    <div class="col-md-8 col-md-offset-2 post-content" style="position:relative;bottom:-400px;">
+                        <div class="title">Introduction To Git.
                         </div>
                         <div class="subtitle">
-                            <span class="category">Design / Branding</span>
-                            <span class="date">04.12.2016</span>
+                            <span class="category">Version Control / Git</span>
+                            <span class="date">24.09.2018</span>
                         </div>
-                        <p>Cras venenatis augue sed leo pellentesque sodales. Nulla facilisi. Nullam semper maximus massa eget luctus. Mauris sed odio tincidunt, volutpat augue at, commodo dui. Phasellus hendrerit condimentum vehicula. Nunc faucibus felis
-                            rhoncus libero rutrum, nec dapibus nisi pellentesque. Integer in turpis a metus consectetur luctus et id ex. Nunc commodo faucibus nulla, et elementum libero egestas rutrum. Interdum et malesuada fames ac ante ipsum primis
-                            in faucibus. Suspendisse ipsum mi, volutpat eget dignissim sed, suscipit at libero, ultricies vel massa vitae, auctor luctus ipsum.
+                        <p>Git is a software that helps you keep track of changes to files in a folder on your PC. After making some changes to files in this folder, you can “commit” the changes to Git for safe-keeping. These changes could be creating, renaming,
+                            deleting a file or subfolder; or editing the content of a file.
                         </p>
-                        <p>In hac habitasse platea dictumst. Vestibulum condimentum orci eget sapien fringilla, id accumsan odio suscipit. Phasellus at facilisis diam. Donec sit amet imperdiet sem. Aliquam pretium nisl tortor, ut vehicula mauris imperdiet
-                            non.
+                        <p>You can also share this folder you’re “git-tracking” with others (via a local computer network, for example) and they can also make changes to files in the folder and <b>“commit”</b> their changes into the mighty hands of Git for
+                            safe-keeping.
+                        </p>
+                        <p class="title">
+                            Getting Started with Git
+                        </p>
+                        <p>
+                            We did say Git is a software, so go ahead and <a href="https://git-scm.com/downloads" style="color:black">grab
+                                the executable file for your Operating System</a>, install it and come back here to continue gisting with us. Don’t worry, we’ll wait. we're patient.<br><br> Installed Git? Awesome! Nope? Err, I really recommend you follow
+                            each step religiously so you don’t confuse yourself or me. Thanks for understanding.
+                            <br><br> If you have Git installed, open terminal (if you’re using Linux or Mac) or command prompt (if using Windows). Please keep your terminal open, we’ll be using it for a while…<br><br> Now let’s tell git 1 or 2 things
+                            about you — your name and email really. Git needs those info so it can confidently tie your identity to any commits you make; and then when someone comes asking, who made those changes?, Git can say, oh it was this guy or that
+                            lady. Ready to introduce yourself to Git? You’d only have to do it this one time. Punch the following TWO instructions into your terminal/command prompt: </p>
+                        <blockquote>
+                            <code>
+                                git config --global user.name “Your Name Comes Here”<br>
+                                git config --global user.email you@yourdomain.example.com
+                            </code>
+                        </blockquote>
+                        <p>
+                            Done that? Aren’t you just nice! Alright, let’s do what we came here to do — tell Git to track that folder that houses our project files. We need to get the path to that our project folder. Sorry, won’t tell you how to do that. But once you have it, send
+                            the following command into your terminal/command prompt:
                         </p>
                         <blockquote>
-                            <p>Aenean eget varius augue, nec gravida lectus. Pellentesque in imperdiet tellus, ac efficitur risus. Etiam laoreet dapibus lorem vitae aliquam. Sed ultrices elementum ligula, molestie consectetur massa rhoncus at. Etiam iaculis
-                                elit vitae venenatis varius. Vestibulum elementum quam a ante venenatis, eu convallis nisi dapibus.
+                            <code>
+                                cd path-to-project-folder
+                            </code>
+                        </blockquote>
+                        <p> You guessed right, that command changes the working directory of your terminal/command prompt to your project directory. Done?<br><br>Okay, command Git to track this folder/directory we just navigated to and watch for file/subfolder
+                            changes. Doing so officially turns your project directory into a <b>local git repository</b>. What is a repository you say? <a href="https://https://www.google.com/search?q=repository+meaning" style="color:black">Ask
+                                Google!.</a><br><br>Use the following command to convert your project folder into a local git repository:
+                        </p>
+                        <blockquote>
+                            <code>
+                                git init
+                            </code>
+                        </blockquote>
+                        <p>
+                            Yay!!! Git is now watching our project folder for changes. But we ain’t done just yet. It is true that Git can now tell us when there’s a change to this folder, but it doesn’t save the changes to the <b>git repository</b> automatically.
+                            Git is smart, you know. It knows that some file changes are just plain irrelevant and need not be saved. So the onus is on us to tell Git when we’ve made a relevant change and then Git will save the changes to its history bank
+                            (the repository). If we don’t tell Git, Git won’t save nothing.<br><br>Before we learn how to instruct Git to save changes, it’s worth pointing out at this time, that you can continue working on your project files. Use your
+                            IDE, code editor, file manager or what-have-you to make changes to the files and subfolders in your project directory. When you’ve made important changes, remember to save (or <b>commit</b>) them. We’ll talk about how to do
+                            that shortly.<br><br>Also worth noting at this point, is that, if you restart your PC or for some other reason, your terminal/command prompt is closed, you do not need to re-execute the <code>git init</code> command.
+                        </p>
+                        <blockquote>
+                            <p>I repeat, do not execute <code>git init</code> more than once in a project folder.
                             </p>
                         </blockquote>
-                        <p>In hac habitasse platea dictumst. Vestibulum condimentum orci eget sapien fringilla, id accumsan odio suscipit. Phasellus at facilisis diam. Donec sit amet imperdiet sem. Aliquam pretium nisl tortor, ut vehicula mauris imperdiet
-                            non.
+                        <p>
+                            Nothing bad will happen, but it’s just pointless. <b>You initialize your project directory as a local git repository once and only once</b>. Subsequently, you can perform other git actions such as committing changes which (I
+                            remember) we’ll look at in a bit.<br><br>Final note: always remember to execute git commands in your project directory. If for some reason, your terminal/command prompt is closed, reopen it and navigate back to your project
+                            directory before executing git commands. If you try to execute a git command without navigating to your project directory, you’ll get the following error:
                         </p>
-                        <div class='article-bottom'>
-                            <div class="article-tags">
-                                <span>Tags:</span>
-                                <a href="#">design</a>,
-                                <a href="#">creative</a>,
-                                <a href="#">branding</a>
-                            </div>
-                            <ul class="social">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="article-comments">
-                            <div class="title">4 Comments:</div>
-                            <div class="comment">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment comment-replied">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment comment-replied">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                            <div class="comment">
-                                <div class="avatar"></div>
-                                <div class="top-info">
-                                    <span class="name">John Leonard</span>
-                                    <span class="date">04.14.2016</span>
-                                    <button>Reply</button>
-                                </div>
-                                <p>Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante pharetra id. Donec orci arcu, sagittis ut finibus vitae.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="article-form">
-                            <form class='second-form'>
-                                <div class="title">Leave a Comment:</div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="text" placeholder='Your Name'>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <input type="text" placeholder='Your Email'>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <textarea placeholder='Your Comment'></textarea>
-                                    </div>
-                                    <div class="content-button col-md-12 col-sm-12">
-                                        <button class="button third-button">Post a comment</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        <blockquote>
+                            <code>
+                                        fatal: Not a git repository
+                                </code>
+                        </blockquote>
+                        <p>
+                            Alright, where were we? Ah, I remember… How do we tell Git to save relevant changes? Simple, really. Just like when you want to send multiple files via Bluetooth, you mark/select the files, then you send; we likewise tell Git to mark the files we want
+                            to save, then we save.<br><br>You can tell Git to mark certain files for saving. The <code>git add</code> command is responsible for this. At the end of the command, enter the path to the files you
+                            want to mark (relative to the project folder), separating each file’s relative path with a space.<br><br>The command below tells git to MARK 2 files for saving (changed_file_1 and changed_file_2 in the subfolder named folder1):
+                        </p>
+                        <blockquote>
+                            <code>
+                                        git add changed_file_1 folder1/changed_file_2
+                                    </code>
+                        </blockquote>
+                        <p>
+                            You can also tell Git to MARK ALL CHANGED/EDITED files for saving. The code below does just that:
+                        </p>
+                        <blockquote>
+                            <code>
+                                        git add .
+                                        </code>
+                        </blockquote>
+                        <p>
+                            There are times when you want to use the <code>git add .</code> command to MARK ALL edited files. <b>Actually, most times that’s what you should do</b>. But there may be some files and folders that have no business whatsoever
+                            in a git repository. Such files may include IDE autogenerated files/folders and <b></b>sensitive configuration files</b> which you and I know is <b>not</b> meant to be seen by everyone. You can tell Git that:
+                        </p>
+                        <blockquote>
+                            <p>
+                                Hey Git, whenever I say mark all files, what I actually mean is that you should mark all files except <b><em>these files</em></b>”
+                            </p>
+                        </blockquote>
+                        <p>
+                            If Git was not smart, it would have replied:
+                        </p>
+                        <blockquote>
+                            <p>
+                                Say what now? <b><em>What</em></b> files do you want me to <b><em>ignore</em></b>?”
+                            </p>
+                        </blockquote>
+                        <p>
+                            But Git is smart. It’s smart enough to know that <b>there’s a file it can check to find out which files and subfolders you want it to ignore</b>. So, create that file directly inside your project directory. Do not place that
+                            file inside a subfolder! The name of the file should be <b>“.gitignore”</b>. If you give it any other name or put the file in a subfolder, Git will just be looking at you like 🙄🙄<br><br>Assuming you’re still with me up to
+                            this point, open your .gitignore file and start to enter the name(s) of those files and subfolders you want Git to always ignore even if you tell it to mark all files. Each file/subfolder name should be in a line of its own.
+                            When you’re done, remember to save the .gitignore file. (Control + S, anyone? Or is it Cmd + S? Whatever works for you!)<br><br>Whether using a .gitignore file or not, remember that you must always MARK the files you want Git
+                            to save before you finally save.<br><br>To finally save the MARKED files to the local repository, enter the following code in your terminal/command prompt:
+                        </p>
+                        <blockquote>
+                            <code>
+                                        git commit -m "short descriptive message"
+                                            </code>
+                        </blockquote>
+                        <p>
+                            You should actually change the text in quote to any message that actually briefly describes the changes that you’re about to commit. Oh, just so you know, the write word is <b>commit</b>, not save. If we’re all gonna become
+                            Git experts, we might as well start using the right terms, shouldn’t we?<br><br>What commit message did you use? This is an example:
+                        </p>
+                        <blockquote>
+                            <code>
+                                        git commit -m "change login page background color"
+                                                </code>
+                        </blockquote>
+                        <blockquote>
+                            <p>Just a passing mention, there are conventions (standards) for how to properly write git commit messages. <a href="http://who-t.blogspot.com/2009/12/on-commit-messages.html" style="color:black;">Here’s one way to write good commit messages</a>.<br><br>Of
+                                course, no one’s gonna beat you if you write whatever message you like, but at some point in the future, when you start working on projects in “organized” organizations or with other pros, you’re gonna <b>need</b> to write
+                                <b>proper commit messages</b>.
+                            </p>
+                        </blockquote>
+                        <p>
+                            And that’s it! Git has “saved” (yeah, I know, won’t use it again, I promise) our latest changes to the local repository. Later in the future, we can come back to view these files, as they are right now.<br><br>While Git is
+                            in itself a marvel, it is often paired with special kinds of cloud hosting platform like GitHub to enable you keep copies of your local git repositories in the cloud. Doing so enables you to access your project files anytime,
+                            anywhere. It also enables you to allow others view your project files, make and commit changes or just review your work.<br><br>You can learn more about such git hosting platforms and how to connect your local repositories
+                            to them in the next article: <a href="https://medium.com/@itswisdomagain/github-101-introduction-to-github-for-newbies-efaf46c88406" style="color:black;">GitHub 101 — Introduction to GitHub for Newbies</a>.<br><br>That’s it
+                            for now. Gracias mucho. If you enjoyed the article, and want to read more exciting articles,
+                            <a href="https://medium.com/@itswisdomagain" style="color:black;">come on over</a>.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -8882,6 +8882,7 @@ ul {
     position: relative;
     color: #fff;
     padding-left: 100px;
+    text-align: center;
 }
 
 .section-title.center-title {
@@ -8906,14 +8907,15 @@ ul {
     border-color: black;
 }
 
-.section-title::before {
+
+/*.section-title::before {
     content: '';
     position: absolute;
     top: 25px;
     left: 0;
     width: 70px;
     border-bottom: 1px solid #fff;
-}
+}*/
 
 .section-breadcrumbs ul {
     margin: 5px 0 0;
@@ -16156,4 +16158,8 @@ section.section-blog .content-button {
     max-height: 300px;
     font: 300 16px/1.5 "Roboto", sans-serif;
     border: 0;
+}
+
+.fa-github:before {
+    content: "\f09b";
 }

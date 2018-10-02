@@ -9642,7 +9642,8 @@ header.page-header.page-header-image .header-content a:hover::after {
     border-color: #cb2f2f;
 }
 
-header.page-header.page-header-image .header-content a::after {
+
+/*header.page-header.page-header-image .header-content a::after {
     content: '';
     position: absolute;
     right: -50px;
@@ -9652,7 +9653,7 @@ header.page-header.page-header-image .header-content a::after {
     -o-transition: border-color .25s;
     transition: border-color .25s;
     top: 50%;
-}
+}*/
 
 header.page-header.page-header-image .header-content .section-title {
     margin-left: -100px;

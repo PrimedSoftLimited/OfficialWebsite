@@ -48,7 +48,7 @@
                             <a href="about.html">About us</a>
                         </li>
                         <li>
-                            <a href="https://medium.com/primedsoft">Blog</a>
+                            <a href="https://medium.com/primedsoft" target="_blank">Blog</a>
                         </li>
                         <li>
                             <a href="contact-us.html" class='active'>Contact us</a>
@@ -117,7 +117,7 @@
                                         <a href="about.html">About us</a>
                                     </li>
                                     <li>
-                                        <a href="https://medium.com/primedsoft">Blog</a>
+                                        <a href="https://medium.com/primedsoft" target="_blank">Blog</a>
                                     </li>
                                     <li>
                                         <a href="contact-us.html" class='active'>Contact us</a>
@@ -195,13 +195,13 @@
                         <p>
                             Want to do business with us?. Reachout to us.
                         </p>
-                        <form class='first-form'>
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Phone">
+                        <form action="mailto:primedsoft@gmail.com" method="post" enctype="text/plain" class='gform first-form'>
+                            <input type="text" placeholder="Your Name" required style="color:white;">
+                            <input type="email" placeholder="Your Email" required style="color:white;">
+                            <input type="number" placeholder="Your Phone" required style="color:white;">
                             <textarea placeholder="Enter Your Message..."></textarea>
                             <div class="button">
-                                <button>Submit</button>
+                                <button type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
